@@ -1,0 +1,30 @@
+@import "variables";
+body{
+  font-family: $fonts-text;
+  background-color: $asphalt;
+  color: $clouds;
+}
+
+h1, h2, h3, h4, h5, h6{
+  font-family: $fonts-headings;
+}
+
+nav{
+  background-color:$clouds;
+  ul{
+    li{
+      display: inline-block;
+      a{
+        display:block;
+        padding:20px;
+        color: $asphalt;
+        border-right: 1px solid $asphalt;
+        transition: all 300ms ease-in-out;
+        &:hover{
+          color: $clouds;
+          background-color: $asphalt;
+        }
+      }
+    }
+  }
+}
