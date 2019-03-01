@@ -21,3 +21,20 @@ nav {
       nav ul li a:hover {
         color: #ecf0f1;
         background-color: #34495e; }
+
+.shape, .shape1, .shape2, .shape3 {
+  display: inline-block;
+  width: 100px;
+  height: 100px;
+  margin: 18px;
+  background-color: #7796b4;
+  border: 5px solid #587ca0; }
+
+.shape1 {
+  box-shadow: 1px 2px 5px 2px black; }
+
+.shape2 {
+  box-shadow: 2px 4px 10px 2px black; }
+
+.shape3 {
+  box-shadow: 4px 8px 30px 2px black; }

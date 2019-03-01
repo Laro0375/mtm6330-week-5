@@ -1,4 +1,14 @@
 @import "variables";
+@mixin liftUp($height:high){
+
+  @if $height == high{
+    box-shadow: 1px 2px 5px 2px black;
+  }@else if $height == higher{
+    box-shadow: 2px 4px 10px 2px black;
+  }@else if $height == highest{
+    box-shadow: 4px 8px 30px 2px black;
+  }
+}
 body{
   font-family: $fonts-text;
   background-color: $asphalt;
@@ -33,4 +43,27 @@ nav{$text-font-size:20px;
       }
     }
   }
+}
+.shape{
+  display: inline-block;
+  width: 100px;
+  height: 100px;
+  margin: $text-font-size;
+  background-color:lighten($asphalt, 30%);
+  border:5px solid lighten($asphalt, 20%);
+}
+
+.shape1{
+  @extend .shape;
+  @include liftUp();
+}
+
+.shape2{
+  @extend .shape;
+  @include liftUp(higher);
+}
+
+.shape3{
+  @extend .shape;
+  @include liftUp(highest);
 }
